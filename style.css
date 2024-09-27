@@ -1,0 +1,109 @@
+:root {
+    --blue: #0032C8;
+    --blue-hover: #0039e6;
+    --red: #CB4113;
+
+    --white: #ffffff;
+    --gray-light: #DBDBD1;
+    --gray-mid: #B9B9B4;
+    --gray-dark: #eee;
+    --bg-light: #fafafa;
+    --bg-table: #fafaf5; 
+    --bg-active: #e6e8ff;
+
+    --spacing-small: 4px;
+    --spacing-medium: 8px;
+    --spacing-large: 12px;
+    --spacing-xlarge: 16px;
+    --spacing-xxlarge: 24px;
+}
+
+/* Reset */
+a, a:focus, button:focus, img { outline: 0; }
+* { margin: 0; padding: 0; box-sizing: border-box; word-wrap: break-word; word-break: break-word; }
+:after, :before { box-sizing: border-box; }
+a { text-decoration: none; color: inherit; }
+a:hover { cursor: pointer; }
+a:focus { box-shadow: none; }
+img { border: 0; vertical-align: middle; }
+ul { list-style: none; }
+b, h1, h2, h3, h4, h5, h6, strong { font-weight: 700; }
+button { all: unset; cursor: pointer; display: inline-block; }
+input:focus, input:required, textarea:focus, textarea:required { outline: 0; box-shadow: none; }
+input, select, textarea { border: 0; border-radius: 0; }
+input, textarea { appearance: none; word-break: break-all; font-family: 'Red Hat Display'; }
+input[type=button], input[type=submit] { appearance: none; }
+select::-ms-expand { display: none; }
+textarea { resize: vertical; }
+input[placeholder] { text-overflow: ellipsis; }
+::-moz-placeholder { text-overflow: ellipsis; }
+input:-moz-placeholder { text-overflow: ellipsis; }
+footer, header, nav { display: block; }
+html { -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+body { font-family: monospace; background-color: var(--bg-light); min-height: 100svh; }
+
+/* Utility Class */
+.container { margin-right: auto; margin-left: auto; padding-left: var(--spacing-large); padding-right: var(--spacing-large); max-width: 1280px; }
+.transparent-overlay { position: relative; }
+.transparent-overlay::before { content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAAtJREFUGFdjYAACAAAFAAGq1chRAAAAAElFTkSuQmCC'); width: 100%; height: 100%; position: absolute; top: 0; left: 0; right: 0; bottom: 0; }
+button svg { width: 100%; height: 100%; display: block; }
+button:active { transform: scale(0.9); }
+.btn-mid { width: 24px; height: 24px; }
+.btn-small { width: 12px; height: 12px; }
+
+/* Header */
+.header-inner-wrap { display: flex; align-items: center; justify-content: space-between; gap: var(--spacing-medium); position: relative; padding: var(--spacing-xlarge) 0; }
+.actions-container { display: flex; align-items: center; justify-content: center; gap: var(--spacing-small); }
+.actions-container button { display: none; }
+.show-edit button[data-action=edit] { display: initial; }
+.show-form button[data-action=add-new][data-action=add-new] { transform: rotate(45deg); }
+.show-add-new button[data-action=add-new] { display: initial; }
+.show-movedown button[data-action=movedown] { display: initial; }
+.show-moveup button[data-action=moveup] { display: initial; }
+.show-delete button[data-action=delete] { display: initial; }
+.show-refresh button[data-action=refresh] { display: initial; }
+.show-save button[data-action=save] { display: initial; }
+
+/* Table */
+.table-wrap { width: 100%; overflow-x: auto; border: 1px solid var(--gray-light); background-color: var(--white); margin-bottom: var(--spacing-xlarge); }
+table { width: 100%; overflow: hidden; min-width: 1000px; }
+td, th { border: 1px solid var(--gray-dark); padding: var(--spacing-small); cursor: default; border-color: transparent; }
+th { font-weight: 400; text-align: left; vertical-align: top; }
+td { font-weight: 500; }
+thead { position: relative; background-color: var(--bg-table); }
+tr { position: relative; }
+tr.active { background-color: var(--bg-active); }
+td:focus, td:focus-visible { border-color: var(--blue); background-color: var(--white); outline: 0; }
+.th-content-top { display: flex; align-items: flex-start; justify-content: space-between; gap: var(--spacing-small); margin-bottom: var(--spacing-medium); }
+.th-content-wrap .unit { color: var(--gray-mid); }
+.select-box, .select-box-all { color: var(--gray-light); }
+.select-box { cursor: pointer; }
+.active .select-box, .select-box:hover { color: var(--blue); }
+
+/* Form */
+.form-wrap { display: none; position: absolute; top: 100%; width: 100%; right: 0; z-index: 1; }
+.show-form .form-wrap { display: block; }
+.form-inner-wrap { margin-bottom: var(--spacing-large); background-color: var(--white); padding: var(--spacing-large); border: 1px solid var(--gray-light); }
+
+.form label { display: block; }
+.form label, form button { margin: var(--spacing-small) 0 var(--spacing-large); }
+.form input, .form select { width: 100%; font-family: inherit; padding: var(--spacing-small); margin-bottom: var(--spacing-small); border: 1px solid var(--gray-light); }
+.form button { background: var(--gray-mid); color: var(--white); padding: var(--spacing-small) var(--spacing-xlarge); cursor: pointer; margin: var(--spacing-large) 0 0; }
+.form button[type=submit] { background-color: var(--blue); }
+.form input:focus { border-color: var(--gray-mid); }
+
+@media screen and (max-width: 766px) {
+    .header-inner-wrap { flex-direction: column; align-items: flex-start; padding: var(--spacing-large) 0; }
+}
+
+/* Hover and active effects */
+@media screen and (pointer: fine) {
+    button:hover svg path { fill: var(--blue); }
+    .btn-danger:hover svg path { fill: var(--red); }
+    .form button[type=submit]:hover { background-color: var(--blue-hover); }
+}
+@media screen and (pointer: coarse) {
+    button:active svg path { fill: var(--blue); }
+    .btn-danger:active svg path { fill: var(--red); }
+    .form button[type=submit]:active { background-color: var(--blue-hover); }
+}

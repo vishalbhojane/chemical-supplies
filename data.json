@@ -1,0 +1,167 @@
+[
+    {
+        "id": "1",
+        "chemical_name": "Acetic Acid",
+        "vendor": "Chemical Inc.",
+        "density": "1.05",
+        "viscosity": "0.89",
+        "packaging": "Bottle",
+        "pack_size": "500",
+        "unit": "mL",
+        "quantity": "100"
+    },
+    {
+        "id": "2",
+        "chemical_name": "Sodium Chloride",
+        "vendor": "Salt Co.",
+        "density": "2.16",
+        "viscosity": "N/A",
+        "packaging": "Bag",
+        "pack_size": "1",
+        "unit": "kg",
+        "quantity": "50"
+    },
+    {
+        "id": "3",
+        "chemical_name": "Ethanol",
+        "vendor": "Solvent Supplies",
+        "density": "0.789",
+        "viscosity": "1.2",
+        "packaging": "Drum",
+        "pack_size": "20",
+        "unit": "L",
+        "quantity": "5"
+    },
+    {
+        "id": "4",
+        "chemical_name": "Hydrochloric Acid",
+        "vendor": "Acid Masters",
+        "density": "1.19",
+        "viscosity": "0.9",
+        "packaging": "Barrel",
+        "pack_size": "50",
+        "unit": "L",
+        "quantity": "10"
+    },
+    {
+        "id": "5",
+        "chemical_name": "Sulfuric Acid",
+        "vendor": "Acid Solutions",
+        "density": "1.84",
+        "viscosity": "21.5",
+        "packaging": "Tank",
+        "pack_size": "200",
+        "unit": "L",
+        "quantity": "2"
+    },
+    {
+        "id": "6",
+        "chemical_name": "Sodium Bicarbonate",
+        "vendor": "Baking Goods Ltd.",
+        "density": "2.20",
+        "viscosity": "N/A",
+        "packaging": "Box",
+        "pack_size": "500",
+        "unit": "g",
+        "quantity": "200"
+    },
+    {
+        "id": "7",
+        "chemical_name": "Calcium Carbonate",
+        "vendor": "Minerals Group",
+        "density": "2.71",
+        "viscosity": "N/A",
+        "packaging": "Sack",
+        "pack_size": "25",
+        "unit": "kg",
+        "quantity": "10"
+    },
+    {
+        "id": "8",
+        "chemical_name": "Methanol",
+        "vendor": "Pure Chemicals",
+        "density": "0.791",
+        "viscosity": "0.59",
+        "packaging": "Bottle",
+        "pack_size": "1",
+        "unit": "L",
+        "quantity": "30"
+    },
+    {
+        "id": "9",
+        "chemical_name": "Benzene",
+        "vendor": "Industrial Solvents",
+        "density": "0.876",
+        "viscosity": "0.65",
+        "packaging": "Drum",
+        "pack_size": "20",
+        "unit": "L",
+        "quantity": "7"
+    },
+    {
+        "id": "10",
+        "chemical_name": "Hydrogen Peroxide",
+        "vendor": "Oxidizers Ltd.",
+        "density": "1.11",
+        "viscosity": "1.4",
+        "packaging": "Bulk",
+        "pack_size": "100",
+        "unit": "L",
+        "quantity": "6"
+    },
+    {
+        "id": "11",
+        "chemical_name": "Ammonium Hydroxide",
+        "vendor": "Clean Solutions",
+        "density": "0.90",
+        "viscosity": "0.91",
+        "packaging": "Bottle",
+        "pack_size": "2",
+        "unit": "L",
+        "quantity": "15"
+    },
+    {
+        "id": "12",
+        "chemical_name": "Acetone",
+        "vendor": "Solvents R Us",
+        "density": "0.784",
+        "viscosity": "0.32",
+        "packaging": "Can",
+        "pack_size": "5",
+        "unit": "L",
+        "quantity": "20"
+    },
+    {
+        "id": "13",
+        "chemical_name": "Chloroform",
+        "vendor": "Chemical Warehouse",
+        "density": "1.48",
+        "viscosity": "0.56",
+        "packaging": "Drum",
+        "pack_size": "10",
+        "unit": "L",
+        "quantity": "8"
+    },
+    {
+        "id": "14",
+        "chemical_name": "Glycerol",
+        "vendor": "Biochemicals Ltd.",
+        "density": "1.26",
+        "viscosity": "1.5",
+        "packaging": "Bottle",
+        "pack_size": "1",
+        "unit": "L",
+        "quantity": "25"
+    },
+    {
+        "id": "15",
+        "chemical_name": "Citric Acid",
+        "vendor": "Food Ingredients Co.",
+        "density": "1.54",
+        "viscosity": "0.8",
+        "packaging": "Bag",
+        "pack_size": "500",
+        "unit": "g",
+        "quantity": "100"
+    }
+]
